@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+    <listener class-name="com.gao.Util.TestCaseReport"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)">
+    <parameter name="password" value="Gyx932356467"/>
+    <parameter name="browser" value="chrome"/>
+    <parameter name="url" value="https://www.douban.com/"/>
+    <parameter name="username" value="15757118203"/>
+    <classes>
+      <class name="com.gao.Case.SearchCase">
+        <methods>
+          <include name="Search_Case" invocation-numbers="0"/>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- com.gao.Case.SearchCase -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

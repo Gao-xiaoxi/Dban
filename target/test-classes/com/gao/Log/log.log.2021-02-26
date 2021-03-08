@@ -1,0 +1,10 @@
+2021-02-26 23:12:55 - [ DEBUG ]  com.gao.Case.LoginCase.beforeTest(LoginCase.java:28) - main - com.gao.Case.LoginCase - 初始化浏览器 - 
+2021-02-26 23:12:55 - [ DEBUG ]  com.gao.Case.BaseCase.GetDriver(BaseCase.java:20) - main - com.gao.Case.BaseCase - 初始化谷歌浏览器 - 
+2021-02-26 23:13:27 - [ DEBUG ]  com.gao.Case.LoginCase.beforeTest(LoginCase.java:28) - main - com.gao.Case.LoginCase - 初始化浏览器 - 
+2021-02-26 23:13:27 - [ DEBUG ]  com.gao.Case.BaseCase.GetDriver(BaseCase.java:20) - main - com.gao.Case.BaseCase - 初始化谷歌浏览器 - 
+2021-02-26 23:14:10 - [ DEBUG ]  com.gao.Case.LoginCase.beforeTest(LoginCase.java:28) - main - com.gao.Case.LoginCase - 初始化浏览器 - 
+2021-02-26 23:14:10 - [ DEBUG ]  com.gao.Case.BaseCase.GetDriver(BaseCase.java:20) - main - com.gao.Case.BaseCase - 初始化谷歌浏览器 - 
+2021-02-26 23:20:24 - [ DEBUG ]  com.gao.Case.LoginCase.beforeTest(LoginCase.java:28) - main - com.gao.Case.LoginCase - 初始化浏览器 - 
+2021-02-26 23:20:24 - [ DEBUG ]  com.gao.Case.BaseCase.GetDriver(BaseCase.java:20) - main - com.gao.Case.BaseCase - 初始化谷歌浏览器 - 
+2021-02-26 23:24:39 - [ DEBUG ]  com.gao.Case.LoginCase.beforeTest(LoginCase.java:28) - main - com.gao.Case.LoginCase - 初始化浏览器 - 
+2021-02-26 23:24:39 - [ DEBUG ]  com.gao.Case.BaseCase.GetDriver(BaseCase.java:20) - main - com.gao.Case.BaseCase - 初始化谷歌浏览器 - 
