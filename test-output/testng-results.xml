@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="64402" started-at="2021-03-08T12:06:34Z" finished-at="2021-03-08T12:07:39Z">
+  <suite name="Suite" duration-ms="143636" started-at="2021-03-09T14:52:26Z" finished-at="2021-03-09T14:54:50Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="64402" started-at="2021-03-08T12:06:34Z" finished-at="2021-03-08T12:07:39Z">
+    <test name="Test" duration-ms="143636" started-at="2021-03-09T14:52:26Z" finished-at="2021-03-09T14:54:50Z">
       <class name="com.gao.Case.SearchCase">
-        <test-method status="PASS" signature="beforeTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.gao.Case.SearchCase@79b06cab]" name="beforeTest" is-config="true" duration-ms="40406" started-at="2021-03-08T12:06:35Z" finished-at="2021-03-08T12:07:15Z">
+        <test-method status="PASS" signature="beforeTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.gao.Case.SearchCase@79b06cab]" name="beforeTest" is-config="true" duration-ms="39775" started-at="2021-03-09T14:52:26Z" finished-at="2021-03-09T14:53:06Z">
           <params>
             <param index="0">
               <value>
@@ -33,7 +33,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="Search_Case(java.lang.String)[pri:0, instance:com.gao.Case.SearchCase@79b06cab]" name="Search_Case" duration-ms="16087" started-at="2021-03-08T12:07:15Z" data-provider="searchData" finished-at="2021-03-08T12:07:31Z">
+        <test-method status="PASS" signature="Search_Case(java.lang.String)[pri:0, instance:com.gao.Case.SearchCase@79b06cab]" name="Search_Case" duration-ms="55708" started-at="2021-03-09T14:53:07Z" data-provider="searchData" finished-at="2021-03-09T14:54:02Z">
           <params>
             <param index="0">
               <value>
@@ -44,7 +44,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Search_Case -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.gao.Case.SearchCase@79b06cab]" name="afterTest" is-config="true" duration-ms="7460" started-at="2021-03-08T12:07:31Z" finished-at="2021-03-08T12:07:39Z">
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.gao.Case.SearchCase@79b06cab]" name="afterTest" is-config="true" duration-ms="47558" started-at="2021-03-09T14:54:02Z" finished-at="2021-03-09T14:54:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->

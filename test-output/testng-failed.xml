@@ -14,7 +14,7 @@
     <classes>
       <class name="com.gao.Case.SearchCase">
         <methods>
-          <include name="Search_Case" invocation-numbers="0"/>
+          <include name="Search_Case"/>
           <include name="beforeTest"/>
           <include name="afterTest"/>
         </methods>
