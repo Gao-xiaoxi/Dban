@@ -17,6 +17,11 @@
       	<include name="Search_Case"></include>
       </methods>
       </class>
+  <class name="com.gao.Case.HomeCase" >
+      <methods>
+      	<include name="Home_Case1"></include>
+      </methods>
+      </class>
      </classes>
   </test> 
  <!--  <test name="Test1">

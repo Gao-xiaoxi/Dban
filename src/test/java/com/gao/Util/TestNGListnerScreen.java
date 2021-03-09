@@ -33,6 +33,9 @@ public class TestNGListnerScreen extends TestListenerAdapter{
 	    else if (caseName.equals("LogoutCase")) {
 	    	bc = (LogoutCase)tr.getInstance();
 	    }
+	    else if (caseName.equals("HomeCase")) {
+	    	bc = (LogoutCase)tr.getInstance();
+	    }
 		WebDriver driver = bc.driver;
 	    this.TakeScreenshot(driver);
 	    super.onTestFailure(tr);

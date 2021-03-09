@@ -14,5 +14,11 @@ public class TestData {
 		TestExcel testExcel = new TestExcel();
 		return testExcel.getTestData(filepath,"searchData.xlsx","Sheet1");
 	}
+	
+	@DataProvider(name = "home1Data")
+	public Object[][] home1Data() throws FileNotFoundException{
+		TestExcel testExcel = new TestExcel();
+		return testExcel.getTestData(filepath,"home1Data.xlsx","Sheet1");
+	}
 
 }
