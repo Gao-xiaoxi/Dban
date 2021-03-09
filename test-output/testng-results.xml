@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="143636" started-at="2021-03-09T14:52:26Z" finished-at="2021-03-09T14:54:50Z">
+  <suite name="Suite" duration-ms="127451" started-at="2021-03-09T15:53:34Z" finished-at="2021-03-09T15:55:41Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="143636" started-at="2021-03-09T14:52:26Z" finished-at="2021-03-09T14:54:50Z">
+    <test name="Test" duration-ms="127451" started-at="2021-03-09T15:53:34Z" finished-at="2021-03-09T15:55:41Z">
       <class name="com.gao.Case.SearchCase">
-        <test-method status="PASS" signature="beforeTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.gao.Case.SearchCase@79b06cab]" name="beforeTest" is-config="true" duration-ms="39775" started-at="2021-03-09T14:52:26Z" finished-at="2021-03-09T14:53:06Z">
+        <test-method status="PASS" signature="beforeTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.gao.Case.SearchCase@3c22fc4c]" name="beforeTest" is-config="true" duration-ms="39497" started-at="2021-03-09T15:53:34Z" finished-at="2021-03-09T15:54:13Z">
           <params>
             <param index="0">
               <value>
@@ -33,7 +33,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="Search_Case(java.lang.String)[pri:0, instance:com.gao.Case.SearchCase@79b06cab]" name="Search_Case" duration-ms="55708" started-at="2021-03-09T14:53:07Z" data-provider="searchData" finished-at="2021-03-09T14:54:02Z">
+        <test-method status="PASS" signature="Search_Case(java.lang.String)[pri:0, instance:com.gao.Case.SearchCase@3c22fc4c]" name="Search_Case" duration-ms="16460" started-at="2021-03-09T15:54:14Z" data-provider="searchData" finished-at="2021-03-09T15:54:30Z">
           <params>
             <param index="0">
               <value>
@@ -44,11 +44,59 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Search_Case -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.gao.Case.SearchCase@79b06cab]" name="afterTest" is-config="true" duration-ms="47558" started-at="2021-03-09T14:54:02Z" finished-at="2021-03-09T14:54:50Z">
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.gao.Case.SearchCase@3c22fc4c]" name="afterTest" is-config="true" duration-ms="7741" started-at="2021-03-09T15:55:33Z" finished-at="2021-03-09T15:55:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
       </class> <!-- com.gao.Case.SearchCase -->
+      <class name="com.gao.Case.HomeCase">
+        <test-method status="PASS" signature="beforeClass(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.gao.Case.HomeCase@460d0a57]" name="beforeClass" is-config="true" duration-ms="37254" started-at="2021-03-09T15:54:30Z" finished-at="2021-03-09T15:55:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://www.douban.com/]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[15757118203]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Gyx932356467]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="Home_Case1(java.lang.String, java.lang.String)[pri:0, instance:com.gao.Case.HomeCase@460d0a57]" name="Home_Case1" duration-ms="18378" started-at="2021-03-09T15:55:07Z" data-provider="home1Data" finished-at="2021-03-09T15:55:26Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[说句话]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[word2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Home_Case1 -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.gao.Case.HomeCase@460d0a57]" name="afterClass" is-config="true" duration-ms="7493" started-at="2021-03-09T15:55:26Z" finished-at="2021-03-09T15:55:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.gao.Case.HomeCase -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

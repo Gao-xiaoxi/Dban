@@ -4,10 +4,10 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="16.460">
+           time="18.378">
   <properties />
   
   
-            <testcase name="Search_Case" time="16.460" classname="com.gao.Case.SearchCase" />
+            <testcase name="Home_Case1" time="18.378" classname="com.gao.Case.HomeCase" />
       
 </testsuite>
