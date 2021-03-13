@@ -24,22 +24,4 @@
       </class>
      </classes>
   </test> 
- <!--  <test name="Test1">
-  <parameter name="username" value="15757118203"></parameter>
-	<parameter name="password" value="Gyx932356467"></parameter>
-	<parameter name="url" value="https://www.imooc.com/user/newlogin"></parameter>
-	<parameter name="browser" value="firefox"></parameter>
-    <classes>
-  <class name="com.coffee.Case.CartCase" >
-      <methods>
-      	<include name="Cart_Case1"></include>
-      </methods>
-      </class>
-      <class name="com.coffee.Case.CartCase2" >
-      <methods>
-      	<include name="Cart_Case2"></include>
-      </methods>
-      </class>
-     </classes>
-  </test>-->
 </suite> 

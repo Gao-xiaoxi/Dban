@@ -37,8 +37,11 @@ public class TestCaseReport implements IReporter {
     private SimpleDateFormat formatter = new SimpleDateFormat ("yyyy年-MM月-dd日-HH时mm分ss秒");
     private Date date = new Date(currentTime);
     private String reportdate = formatter.format(date);
+    
+    FileDir filedir = new FileDir();
+	File dir = filedir.createDir("TestCaseReport");
 	
-	private String path = System.getProperty("user.dir")+File.separator+reportdate+"report.html";
+	private String path = dir+"/"+File.separator+reportdate+"report.html";
 	
 	private String templatePath = System.getProperty("user.dir")+File.separator+"template.html";
 	

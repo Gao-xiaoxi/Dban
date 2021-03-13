@@ -12,10 +12,13 @@ import org.testng.ITestResult;
 import org.testng.TestListenerAdapter;
 
 import com.gao.Case.BaseCase;
+import com.gao.Case.HomeCase;
 import com.gao.Case.LoginCase;
 import com.gao.Case.LogoutCase;
 import com.gao.Case.SearchCase;
 import com.google.common.io.Files;
+
+import bsh.commands.dir;
 
 public class TestNGListnerScreen extends TestListenerAdapter{
 	  @Override
@@ -23,38 +26,29 @@ public class TestNGListnerScreen extends TestListenerAdapter{
 		String caseName = String.valueOf(tr.getInstanceName());
 	    caseName = caseName.split("\\.")[3];
 	    System.out.println("当前case：" + caseName);
-	    BaseCase bc = (BaseCase)tr.getInstance();
-	    if(caseName.equals("LoginCase")) {
-	    	bc = (LoginCase)tr.getInstance();
-	    }
-	    else if (caseName.equals("SearchCase")) {
-	    	bc = (SearchCase)tr.getInstance();
-	    }
-	    else if (caseName.equals("LogoutCase")) {
-	    	bc = (LogoutCase)tr.getInstance();
-	    }
-	    else if (caseName.equals("HomeCase")) {
-	    	bc = (LogoutCase)tr.getInstance();
-	    }
+	  	BaseCase bc = (BaseCase)tr.getInstance();
 		WebDriver driver = bc.driver;
-	    this.TakeScreenshot(driver);
+	    this.TakeScreenshot(driver, caseName);
 	    super.onTestFailure(tr);
 	  }
 	  /**
 		 * 截图方法优化
 		 * @param args
 		 */
-		public void TakeScreenshot(WebDriver driver) {
+		public void TakeScreenshot(WebDriver driver, String caseName) {
 			//图片名称
 			//图片路径
 			//当前时间和当前方法名（否则截图名称都是同一个）
-			SimpleDateFormat sdf = new SimpleDateFormat("yy_MM_dd_hh_mm_ss");
+			SimpleDateFormat sdf = new SimpleDateFormat("yyyy年-MM月-dd日-HH时mm分ss秒");
 			String curTime = sdf.format(new Date());
-			String curClassName = this.getClass().getName();
-			String filepath = curTime+curClassName+".png";
+			String filepath = curTime+caseName+".png";
+			FileDir filedir = new FileDir();
+			File dir = filedir.createDir("TestScreenshot");
 			File ScrFile = ((RemoteWebDriver) driver).getScreenshotAs(OutputType.FILE);
 			try {
-				Files.copy(ScrFile, new File(filepath));
+				//Files.copy(ScrFile, new File(filepath));
+				//Files.copy(ScrFile, File.createTempFile(filepath, ".png", dir));
+				Files.copy(ScrFile, new File(dir+"/"+filepath));
 			} catch (IOException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
