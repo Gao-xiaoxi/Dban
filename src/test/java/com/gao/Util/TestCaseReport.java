@@ -55,7 +55,7 @@ public class TestCaseReport implements IReporter {
 	
 	private long totalTime;
 	
-	private String name = "Imooc Selenium 测试报告 by coffee";
+	private String name = filedir.getProjectName()+" Selenium 测试报告 by coffee";
 	
 	/***
 	public ZTestReport(){

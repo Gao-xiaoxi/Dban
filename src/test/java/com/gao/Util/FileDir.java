@@ -1,6 +1,9 @@
 package com.gao.Util;
 
 import java.io.File;
+import java.io.FileNotFoundException;
+
+import com.alibaba.fastjson.JSONObject;
 
 public class FileDir {
 	
@@ -10,5 +13,11 @@ public class FileDir {
             dir.mkdir();   
         }
 		return dir;
+	}
+	
+	public String getProjectName() {
+		String projectname = System.getProperty("user.dir");
+		String pn = projectname.substring(projectname.lastIndexOf('/')+1,projectname.length());
+		return pn;
 	}
 }
