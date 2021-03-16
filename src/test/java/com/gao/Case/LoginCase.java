@@ -64,7 +64,7 @@ public class LoginCase extends BaseCase{
 		Wait();
 		loginhandle.ClickloginbtnEle();
 		Wait();
-		//断言
+		//非专门测试登录
 		
 	}
 }

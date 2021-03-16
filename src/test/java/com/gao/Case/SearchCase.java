@@ -55,6 +55,7 @@ public class SearchCase extends BaseCase{
 		searchhandle.SendKeysearchEle(searchContent);
 		searchhandle.ClicksearchbtnEle();
 		Wait();
-		//断言
+		//断言,标题不为空
+		Assert.assertNull(driver.getTitle());
 	}
 }

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="48947" started-at="2021-03-13T08:54:07Z" finished-at="2021-03-13T08:54:56Z">
+  <suite name="Suite" duration-ms="216869" started-at="2021-03-14T04:42:06Z" finished-at="2021-03-14T04:45:43Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="48947" started-at="2021-03-13T08:54:07Z" finished-at="2021-03-13T08:54:56Z">
+    <test name="Test" duration-ms="216869" started-at="2021-03-14T04:42:06Z" finished-at="2021-03-14T04:45:43Z">
       <class name="com.gao.Case.SearchCase">
-        <test-method status="PASS" signature="beforeTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.gao.Case.SearchCase@79b06cab]" name="beforeTest" is-config="true" duration-ms="40130" started-at="2021-03-13T08:54:07Z" finished-at="2021-03-13T08:54:47Z">
+        <test-method status="PASS" signature="beforeTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.gao.Case.SearchCase@3c22fc4c]" name="beforeTest" is-config="true" duration-ms="43872" started-at="2021-03-14T04:42:06Z" finished-at="2021-03-14T04:42:50Z">
           <params>
             <param index="0">
               <value>
@@ -33,7 +33,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="FAIL" signature="Search_Case(java.lang.String)[pri:0, instance:com.gao.Case.SearchCase@79b06cab]" name="Search_Case" duration-ms="5" started-at="2021-03-13T08:54:47Z" data-provider="searchData" finished-at="2021-03-13T08:54:47Z">
+        <test-method status="PASS" signature="Search_Case(java.lang.String)[pri:0, instance:com.gao.Case.SearchCase@3c22fc4c]" name="Search_Case" duration-ms="57579" started-at="2021-03-14T04:42:51Z" data-provider="searchData" finished-at="2021-03-14T04:43:49Z">
           <params>
             <param index="0">
               <value>
@@ -41,53 +41,62 @@
               </value>
             </param>
           </params>
-          <exception class="java.lang.ArrayIndexOutOfBoundsException">
-            <message>
-              <![CDATA[1]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.ArrayIndexOutOfBoundsException: 1
-at com.gao.Page.BasePage.GetElementLocator(BasePage.java:56)
-at com.gao.Page.BasePage.GetElementKey(BasePage.java:40)
-at com.gao.Page.SearchPage.GetsearchEle(SearchPage.java:16)
-at com.gao.Handle.SearchHandle.SendKeysearchEle(SearchHandle.java:21)
-at com.gao.Case.SearchCase.Search_Case(SearchCase.java:55)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.ArrayIndexOutOfBoundsException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Search_Case -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.gao.Case.SearchCase@79b06cab]" name="afterTest" is-config="true" duration-ms="7806" started-at="2021-03-13T08:54:48Z" finished-at="2021-03-13T08:54:56Z">
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.gao.Case.SearchCase@3c22fc4c]" name="afterTest" is-config="true" duration-ms="47630" started-at="2021-03-14T04:44:56Z" finished-at="2021-03-14T04:45:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
       </class> <!-- com.gao.Case.SearchCase -->
+      <class name="com.gao.Case.HomeCase">
+        <test-method status="PASS" signature="beforeClass(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.gao.Case.HomeCase@460d0a57]" name="beforeClass" is-config="true" duration-ms="40485" started-at="2021-03-14T04:43:49Z" finished-at="2021-03-14T04:44:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://www.douban.com/]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[15757118203]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Gyx932356467]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="Home_Case1(java.lang.String, java.lang.String)[pri:0, instance:com.gao.Case.HomeCase@460d0a57]" name="Home_Case1" duration-ms="18536" started-at="2021-03-14T04:44:29Z" data-provider="home1Data" finished-at="2021-03-14T04:44:48Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[说句话]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[word2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Home_Case1 -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.gao.Case.HomeCase@460d0a57]" name="afterClass" is-config="true" duration-ms="8080" started-at="2021-03-14T04:44:48Z" finished-at="2021-03-14T04:44:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.gao.Case.HomeCase -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

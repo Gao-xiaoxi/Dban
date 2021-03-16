@@ -47,5 +47,6 @@ public class LogoutCase extends BaseCase{
 		logger.debug("开始执行UserLogout_Base");
 		LogoutHandle.ClickusericonEle();
 		LogoutHandle.ClickquitbtnEle();
+		//非专门测试登出
 	}
 }

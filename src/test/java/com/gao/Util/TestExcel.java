@@ -57,12 +57,5 @@ public class TestExcel {
 		 }
 		 return results;
 	 }
-	
-	public static void main(String[] args) throws FileNotFoundException {
-		TestExcel testExcel = new TestExcel();
-		Object[][] results = testExcel.getTestData("/Users/gaowenjuan/JavaProjects/Dban/src/test/java/com/gao/Data/","home1Data.xlsx","Sheet1");
-		System.out.println(JSONObject.toJSONString(results));
-
-	}
 }
 
