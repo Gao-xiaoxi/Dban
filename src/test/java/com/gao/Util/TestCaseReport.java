@@ -56,21 +56,6 @@ public class TestCaseReport implements IReporter {
 	private long totalTime;
 	
 	private String name = filedir.getProjectName()+" Selenium 测试报告 by coffee";
-	
-	/***
-	public ZTestReport(){
-		SimpleDateFormat formatter = new SimpleDateFormat ("yyyyMMddHHmmssSSS");
-		name = formatter.format(System.currentTimeMillis());
-	}
-	
-	public ZTestReport(String name){
-		this.name = name;
-		if(this.name==null){
-			SimpleDateFormat formatter = new SimpleDateFormat ("yyyyMMddHHmmssSSS");
-			this.name = formatter.format(System.currentTimeMillis());
-		}
-	}
-	*/
 
 	
 	public void generateReport(List<XmlSuite> xmlSuites, List<ISuite> suites, String outputDirectory) {
@@ -161,9 +146,6 @@ public class TestCaseReport implements IReporter {
 			result.put("testResult", listInfo);
 			Gson gson = new GsonBuilder().disableHtmlEscaping().setPrettyPrinting().create();
 			String template = this.read(templatePath);
-			//BufferedWriter output = new BufferedWriter();
-			//output.write(new String(s.getBytes("gbk"),"utf-8"));
-			//BufferedWriter output = new BufferedWriter(new FileWriter(path));
 			BufferedWriter output = new BufferedWriter( new OutputStreamWriter(new FileOutputStream(new File(path)),"utf-8"));
 			template = template.replaceFirst("\\$\\{resultData\\}", Matcher.quoteReplacement(gson.toJson(result)));
 			output.write(template);

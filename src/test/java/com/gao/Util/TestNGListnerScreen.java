@@ -46,8 +46,6 @@ public class TestNGListnerScreen extends TestListenerAdapter{
 			File dir = filedir.createDir("TestScreenshot");
 			File ScrFile = ((RemoteWebDriver) driver).getScreenshotAs(OutputType.FILE);
 			try {
-				//Files.copy(ScrFile, new File(filepath));
-				//Files.copy(ScrFile, File.createTempFile(filepath, ".png", dir));
 				Files.copy(ScrFile, new File(dir+"/"+filepath));
 			} catch (IOException e) {
 				// TODO Auto-generated catch block
